@@ -1,0 +1,5 @@
+#!/usr/bin/env sh
+# List all the function of the library
+grep -h "^b2__" *.sh |
+  sed -e "s/ {$//" |
+  sed -e "s/^/- \`/;s/$/\`/"
